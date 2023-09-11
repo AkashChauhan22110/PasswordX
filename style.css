@@ -27,6 +27,7 @@ ul {
   align-items: center;
 }
 ul li {
+  text-shadow: 1px 1px 3px black;
   font-size: medium;
   font-weight: 800;
   list-style: none;
