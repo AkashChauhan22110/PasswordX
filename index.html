@@ -2,59 +2,64 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <title>PassX Coding</title>
+  <link rel="stylesheet" href="style.css">
+  <title>PaasX Coding</title>
 </head>
 
 <body>
-  <nav>
-    <img src="./logo.png" alt="">
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Contact Us</li>
-    </ul>
-  </nav>
-  <div class="container">
-    <h1>Password Manager</h1>
-    <p>We're thrilled to have you here. Your digital life contains a myriad of passwords, and we know how
-      challenging it can be to manage them all. That's why we're here to make it easy for you.</p>
-    <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
-    <table>
-      <tr>
-        <th>Website</th>
-        <th>Username</th>
-        <th>Password</th>
-        <th>Delete</th>
-      </tr>
+  <div class="main">
 
-    </table>
+    <nav class="nav">
+      <img src="./logo.png" alt="">
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
 
-    <h2>Add a Password</h2>
+    <div class="container">
+      <h1>Password Manager</h1>
+      <p>We're thrilled to have you here. Your digital life contains a myriad of passwords, and we know how
+        challenging it can be to manage them all. That's why we're here to make it easy for you.</p>
+      <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
+      <table>
+        <tr>
+          <th>Website</th>
+          <th>UserName</th>
+          <th>Password</th>
+          <th>Delete</th>
+        </tr>
+        <tr>
+          <td>Website</th>
+          <td>UserName</th>
+          <td>Password</th>
+          <td>Delete</th>
+        </tr>
+      </table>
 
-    <form action="/submit" method="post">
+      <h2>Add a Password</h2>
+      <form action="/submit" method="post">
 
-      <!-- Text input for website -->
-      <!-- <label for="website">Website</label> -->
-      <input type="text" id="website" name="website" placeholder="Website" required>
-      <br><br>
+        <!-- Text input for website -->
+        <input type="text" name="website" id="website" placeholder="website" required>
+        <br><br>
 
-      <!-- Text input for username -->
-      <!-- <label for="username">Username</label> -->
-      <input type="text" id="username" name="username" placeholder="Username" required>
-      <br><br>
+        <!-- Text input for username -->
+        <input type="text" name="username" id="username" placeholder="username" required>
+        <br><br>
 
-      <!-- Password input -->
-      <!-- <label for="password">Password</label> -->
-      <input type="password" id="password" name="password" placeholder="Password" required>
-      <br>
-      <!-- Submit button -->
-      <button class="btn" type="submit">Submit</button>
-    </form>
+        <!-- Password input -->
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <br><br>
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+
+    </div>
+
   </div>
 </body>
 <script src="script.js"></script>
